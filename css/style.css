@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3e6a3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    background-color: #F12802;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-pokemon {
+    background-color: #F12802;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.content-pokemon #snorlax {
+    margin-left: 20px;
+}
+
+.content-pokemon h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.container {
+    background-color: rgba(252, 250, 250, 0.95);
+    width: 90%;
+    margin: -50px auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.container .text {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.container .text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.cards-pokemon {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.text-pokemon {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content-pokemon {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .content-pokemon h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    .card .image {
+        height: 120px;
+    }
+}
